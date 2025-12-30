@@ -718,7 +718,6 @@
            ========================================================================== */
         .skills-section {
             padding: var(--space-2xl) 0;
-            overflow: hidden;
             background: var(--color-surface);
         }
 
@@ -726,31 +725,29 @@
             display: flex;
             flex-direction: column;
             gap: var(--space-md);
+            width: 100%;
+            overflow: hidden;
         }
 
         .skills-marquee {
             display: flex;
-            overflow: hidden;
+            width: max-content;
+            white-space:nowrap;
+            animation: scrollLeft 35s linear infinite;
         }
 
-        .skills-marquee-1 {
-            animation: scrollLeft 30s linear infinite;
-        }
 
         .skills-marquee-2 {
-            animation: scrollRight 30s linear infinite;
+            animation: scrollRight 35s linear infinite;
         }
 
         .skills-marquee-content {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: var(--space-xl);
             padding-right: var(--space-xl);
             flex-shrink: 0;
-        }
-
-        .skills-marquee-content:first-child {
-            animation: scrollContent 30s linear infinite;
+            white-space: nowrap;
         }
 
         .skill-item {
@@ -759,7 +756,9 @@
             font-weight: 700;
             color: var(--color-text-muted);
             white-space: nowrap;
+            flex-shrink: 0;
             transition: color var(--transition-fast);
+            padding: 0 var(--space-sm);
         }
 
         .skills-marquee:hover .skill-item {
@@ -1907,7 +1906,7 @@
                     <span class="section-number">02</span>
                     <h2 class="section-title reveal">About Me</h2>
                     <div class="about-text reveal">
-                        <p class="about-lead">I'm Alex Chen, a multidisciplinary designer and motion artist based in San Francisco, specializing in creating compelling visual experiences that bridge the gap between design and technology.</p>
+                        <p class="about-lead">I'm Aigbomian Miracle, a multidisciplinary designer and motion artist based in Nigeria, specializing in creating compelling visual experiences that bridge the gap between design and technology.</p>
                         <p>With over 8 years of experience in the digital design industry, I've had the privilege of working with startups, agencies, and Fortune 500 companies to bring their visual identities to life through motion and interactive experiences.</p>
                         <p>My approach combines technical expertise with artistic vision, creating work that not only looks stunning but also serves a clear purpose. Whether it's a brand identity system, an interactive website, or a motion graphics piece, I believe that every project should tell a story and create an emotional connection with its audience.</p>
                     </div>
@@ -1992,8 +1991,8 @@
                         Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your vision to life through thoughtful design and compelling motion.
                     </p>
                     <div class="contact-links reveal">
-                        <a href="/cdn-cgi/l/email-protection#83ebe6efefecc3e2efe6fbe0ebe6edade7e6f0eae4ed" class="contact-email">
-                            <span class="contact-email-text"><span class="__cf_email__" data-cfemail="f79f929b9b98b7969b928f949f9299d99392849e9099">[email&#160;protected]</span></span>
+                        <a href="mailto:miracles2motion@gmail.com" class="contact-email">
+                            <span class="contact-email-text"><span class="__cf_email__" data-cfemail="f79f929b9b98b7969b928f949f9299d99392849e9099">Send Mail</span></span>
                         </a>
                         <div class="contact-social">
                             <a href="#" class="social-link" aria-label="Instagram">
@@ -2044,8 +2043,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-left">
-                <span class="footer-logo">AC</span>
-                <span class="footer-copyright">© 2024 Alex Chen. All rights reserved.</span>
+                <span class="footer-logo">M2M</span>
+                <span class="footer-copyright">© 2025 miracles2motion. All rights reserved.</span>
             </div>
             <div class="footer-right">
                 <a href="#" class="footer-link">Privacy Policy</a>
@@ -2679,7 +2678,7 @@
            Console Welcome Message
            ========================================================================== */
         console.log(
-            '%cPortfolio created by MiniMax Agent',
+            '%cPortfolio created by miracles2motion',
             'color: #ccff00; font-size: 14px; font-weight: bold;'
         );
         console.log(
